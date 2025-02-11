@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class XII Farewell 2025 | Govt. Boys HR. Secondary School Surajpur</title>
+    <style>
+        :root {
+            --primary: #0a192f;
+            --secondary: #172a45;
+            --accent: #64ffda;
+            --text: #ccd6f6;
+            --highlight: #e6f1ff;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            margin: 0;
+            background: var(--primary);
+            color: var(--text);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 4rem 2rem;
+            margin-bottom: 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, 
+                rgba(10,25,47,0.9) 0%,
+                rgba(23,42,69,0.9) 100%
+            );
+            z-index: -1;
+        }
+
+        .countdown-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin: 4rem 0;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .countdown-card {
+            background: rgba(100,255,218,0.1);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(100,255,218,0.2);
+        }
+
+        .countdown-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(100,255,218,0.1);
+        }
+
+        .event-details {
+            background: var(--secondary);
+            padding: 3rem;
+            border-radius: 16px;
+            margin: 4rem 0;
+            position: relative;
+            border-left: 4px solid var(--accent);
+        }
+
+        .faculty-tribute {
+            background: linear-gradient(45deg, var(--secondary), var(--primary));
+            padding: 4rem 2rem;
+            border-radius: 16px;
+            margin: 4rem auto;
+            text-align: center;
+            border: 1px solid rgba(100,255,218,0.1);
+        }
+
+        .credits {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: rgba(100,255,218,0.1);
+            padding: 0.75rem 1.5rem;
+            border-radius: 2rem;
+            font-size: 0.9rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(100,255,218,0.2);
+        }
+
+        .registration-section {
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .cta-button {
+            background: var(--accent);
+            color: var(--primary);
+            padding: 1rem 2.5rem;
+            border-radius: 2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(100,255,218,0.3);
+        }
+
+        .registration-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10,25,47,0.95);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .registration-form {
+            background: var(--secondary);
+            padding: 2rem;
+            border-radius: 1rem;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 1rem;
+            margin: 1rem 0;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid var(--accent);
+            border-radius: 0.5rem;
+            color: var(--text);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 2rem 1rem;
+            }
+            
+            .countdown-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+            
+            .event-details {
+                padding: 2rem;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <section class="hero-section">
+            <h1 style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--highlight)">
+                Govt. Boys HR. Secondary School Surajpur
+            </h1>
+            <h2 style="font-size: 1.75rem; color: var(--accent); margin-bottom: 2rem">
+                Class XII Valedictory Ceremony 2025
+            </h2>
+            
+            <div class="event-details">
+                <div style="display: grid; gap: 1rem; font-size: 1.1rem">
+                    <div style="display: flex; align-items: center; gap: 0.5rem">
+                        <svg style="width: 24px; height: 24px; fill: var(--accent)" viewBox="0 0 24 24">
+                            <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zM12 11c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3z"/>
+                        </svg>
+                        <span>14th February 2025</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem">
+                        <svg style="width: 24px; height: 24px; fill: var(--accent)" viewBox="0 0 24 24">
+                            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                        </svg>
+                        <span>11:00 pm Onwards</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem">
+                        <svg style="width: 24px; height: 24px; fill: var(--accent)" viewBox="0 0 24 24">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                        <span>School Courtyard</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <main>
+            <div class="countdown-grid" id="countdown">
+                <div class="countdown-card">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--accent)" id="days">00</div>
+                    <div style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px">Days</div>
+                </div>
+                <div class="countdown-card">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--accent)" id="hours">00</div>
+                    <div style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px">Hours</div>
+                </div>
+                <div class="countdown-card">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--accent)" id="minutes">00</div>
+                    <div style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px">Minutes</div>
+                </div>
+                <div class="countdown-card">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--accent)" id="seconds">00</div>
+                    <div style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px">Seconds</div>
+                </div>
+            </div>
+
+            <section class="faculty-tribute">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--highlight)">
+                    Honoring Our Mentors
+                </h3>
+                <p style="max-width: 600px; margin: 0 auto; color: var(--text)">
+                    "We express our deepest gratitude to the faculty members who have guided us through this academic journey. Your wisdom and dedication will forever remain our guiding light."
+                </p>
+            </section>
+
+            <section class="registration-section">
+                <button class="cta-button" onclick="showRegistration()">Register Now</button>
+            </section>
+        </main>
+    </div>
+
+    <div class="credits">
+        Designed & Developed by Krishna
+    </div>
+
+    <div class="registration-modal" id="registrationModal">
+        <div class="registration-form">
+            <h3 style="color: var(--accent); margin-bottom: 1.5rem">Farewell Registration</h3>
+            <form id="registrationForm" onsubmit="handleSubmit(event)">
+                <input type="text" name="name" class="form-input" placeholder="Full Name" required>
+                <input type="email" name="email" class="form-input" placeholder="Email Address" required>
+                <input type="text" name="class" class="form-input" placeholder="Class & Section" required>
+                <button type="submit" class="cta-button" style="width: 100%">Submit Registration</button>
+            </form>
+            <button class="cta-button" 
+                    style="margin-top: 1rem; background: transparent; border: 1px solid var(--accent)" 
+                    onclick="closeRegistration()">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <div class="registration-alternative" style="text-align: center; margin: 2rem 0">
+        <p style="color: var(--text)">Alternatively, use our secure form:</p>
+        <a href="YOUR_GOOGLE_FORM_LINK" 
+           target="_blank" 
+           style="color: var(--accent); text-decoration: none">
+            Google Form Registration
+        </a>
+    </div>
+
+    <script>
+        class CountdownTimer {
+            constructor(endDate) {
+                this.endDate = new Date(endDate).getTime();
+                this.elements = {
+                    days: document.getElementById('days'),
+                    hours: document.getElementById('hours'),
+                    minutes: document.getElementById('minutes'),
+                    seconds: document.getElementById('seconds')
+                };
+                this.interval = null;
+            }
+
+            update() {
+                const now = Date.now();
+                const diff = this.endDate - now;
+
+                if (diff < 0) {
+                    this.handleExpiration();
+                    return;
+                }
+
+                const days = Math.floor(diff / 86400000);
+                const hours = Math.floor((diff % 86400000) / 3600000);
+                const minutes = Math.floor((diff % 3600000) / 60000);
+                const seconds = Math.floor((diff % 60000) / 1000);
+
+                this.elements.days.textContent = days.toString().padStart(2, '0');
+                this.elements.hours.textContent = hours.toString().padStart(2, '0');
+                this.elements.minutes.textContent = minutes.toString().padStart(2, '0');
+                this.elements.seconds.textContent = seconds.toString().padStart(2, '0');
+            }
+
+            handleExpiration() {
+                clearInterval(this.interval);
+                document.getElementById('countdown').innerHTML = `
+                    <div style="text-align: center; padding: 2rem">
+                        <h2 style="color: var(--accent)">The Ceremony Has Commenced</h2>
+                        <p style="color: var(--text)">Join us at the School Courtyard</p>
+                    </div>
+                `;
+            }
+
+            start() {
+                this.interval = setInterval(() => this.update(), 1000);
+                this.update();
+            }
+        }
+
+        const farewellTimer = new CountdownTimer('2025-02-14T23:00:00');
+        farewellTimer.start();
+
+        function showRegistration() {
+            document.getElementById('registrationModal').style.display = 'flex';
+        }
+
+        function closeRegistration() {
+            document.getElementById('registrationModal').style.display = 'none';
+        }
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const formData = new FormData(form);
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                class: formData.get('class')
+            };
+
+            // Store in localStorage as backup
+            localStorage.setItem('lastRegistration', JSON.stringify(data));
+            
+            // Show confirmation message
+            const confirmation = confirm(`Please confirm to open email client\n\nName: ${data.name}\nEmail: ${data.email}\nClass: ${data.class}`);
+            
+            if(confirmation) {
+                const subject = `Farewell Registration - ${data.name}`;
+                const body = `Name: ${data.name}\nEmail: ${data.email}\nClass: ${data.class}`;
+                
+                // Alternative method using Google Forms
+                const googleFormURL = `https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?entry.123456=${encodeURIComponent(data.name)}&entry.654321=${encodeURIComponent(data.email)}&entry.789012=${encodeURIComponent(data.class)}`;
+                
+                window.open(`mailto:krishnaff1947@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`);
+                window.open(googleFormURL, '_blank');
+                
+                alert('Two registration methods opened:\n1. Email client (please send)\n2. Google Form (alternative)');
+            } else {
+                alert('Registration not sent. Please try again.');
+            }
+            
+            form.reset();
+            closeRegistration();
+
+            // Add at the end of handleSubmit function
+            fetch('https://api.telegram.org/botYOUR_BOT_TOKEN/sendMessage', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    chat_id: 'YOUR_CHAT_ID',
+                    text: `New Registration:\nName: ${data.name}\nEmail: ${data.email}\nClass: ${data.class}`
+                })
+            });
+        }
+
+        document.getElementById('registrationModal').addEventListener('click', (e) => {
+            if(e.target === document.getElementById('registrationModal')) {
+                closeRegistration();
+            }
+        });
+    </script>
+</body>
+</html> 
